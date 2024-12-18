@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiEEkaart.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- Заголовок -->
+            <Label Text="Краса Естонії: Міста та їх опис" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center" />
+
+            <!-- Зображення карти Естонії -->
+            <Image Source="esti.png"
+               HeightRequest="250"
+               Aspect="AspectFit"
+               SemanticProperties.Description="Карта Естонії з містами" />
+
+            <!-- Таллінн -->
+            <Label Text="Таллінн" FontSize="20" FontAttributes="Bold" />
+            <Image Source="licensed-image.jpg" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="• Столиця Естонії, політичний та культурний центр.\n• Назва 'Tallinn' походить від слів 'Taani Linn' (Данське місто)." />
+
+            <!-- Тарту -->
+            <Label Text="Тарту" FontSize="20" FontAttributes="Bold" />
+            <Image Source="vanalinn(9).jpg" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="• Друге за величиною місто.\n• Місто відоме давньою історією та культурою." />
+
+            <!-- Пярну -->
+            <Label Text="Пярну" FontSize="20" FontAttributes="Bold" />
+            <Image Source="licensed-image (2).jpg" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="• Головний курорт Естонії на узбережжі Балтійського моря." />
+
+            <!-- Нарва -->
+            <Label Text="Нарва" FontSize="20" FontAttributes="Bold" />
+            <Image Source="licensed-image (1).jpg" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="• Місто з багатою історією, розташоване на кордоні з Росією." />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
