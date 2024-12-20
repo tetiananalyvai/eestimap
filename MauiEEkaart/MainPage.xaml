@@ -7,36 +7,36 @@
         <VerticalStackLayout Padding="20" Spacing="25">
 
             <!-- Заголовок -->
-            <Label Text="Краса Естонії: Міста та їх опис" 
+            <Label Text="Eestimaa ilu: Linnad ja nende kirjeldused" 
                FontSize="24" 
                FontAttributes="Bold" 
                HorizontalOptions="Center" />
 
-            <!-- Зображення карти Естонії -->
+            <!-- Estonia picture -->
             <Image Source="esti.png"
                HeightRequest="250"
                Aspect="AspectFit"
-               SemanticProperties.Description="Карта Естонії з містами" />
+               SemanticProperties.Description="Eesti kaart linnadega" />
 
-            <!-- Таллінн -->
-            <Label Text="Таллінн" FontSize="20" FontAttributes="Bold" />
-            <Image Source="licensed-image.jpg" HeightRequest="200" Aspect="AspectFit" />
-            <Label Text="• Столиця Естонії, політичний та культурний центр.\n• Назва 'Tallinn' походить від слів 'Taani Linn' (Данське місто)." />
+            <!-- Tallinn -->
+            <Label Text="Tallinn" FontSize="20" FontAttributes="Bold" />
+            <Image Source="tln.jpg" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="Eesti pealinn, poliitiline ja kultuuriline keskus. Nimi 'Tallinn' tuleb sõnast 'Taani Linn'(Taani linn)\nTallinn on Eesti pealinn." />
 
-            <!-- Тарту -->
-            <Label Text="Тарту" FontSize="20" FontAttributes="Bold" />
-            <Image Source="vanalinn(9).jpg" HeightRequest="200" Aspect="AspectFit" />
-            <Label Text="• Друге за величиною місто.\n• Місто відоме давньою історією та культурою." />
+            <!-- Tartu -->
+            <Label Text="Тartu" FontSize="20" FontAttributes="Bold" />
+            <Image Source="tartu.jpg" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="Suuruselt teine ​​linn. Linn on kuulus oma iidse ajaloo ja kultuuri poolest." />
 
-            <!-- Пярну -->
-            <Label Text="Пярну" FontSize="20" FontAttributes="Bold" />
-            <Image Source="licensed-image (2).jpg" HeightRequest="200" Aspect="AspectFit" />
-            <Label Text="• Головний курорт Естонії на узбережжі Балтійського моря." />
+            <!-- Parnu -->
+            <Label Text="Parnu" FontSize="20" FontAttributes="Bold" />
+            <Image Source="parnu.jpg" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="Eesti peamine kuurort Läänemere rannikul." />
 
-            <!-- Нарва -->
-            <Label Text="Нарва" FontSize="20" FontAttributes="Bold" />
-            <Image Source="licensed-image (1).jpg" HeightRequest="200" Aspect="AspectFit" />
-            <Label Text="• Місто з багатою історією, розташоване на кордоні з Росією." />
+            <!-- Narva -->
+            <Label Text="Narva" FontSize="20" FontAttributes="Bold" />
+            <Image Source="narva.jpg" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="Rikka ajalooga linn, mis asub Venemaa piiril." />
 
         </VerticalStackLayout>
     </ScrollView>
