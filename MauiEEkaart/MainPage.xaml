@@ -8,7 +8,7 @@
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="#f0f0f0" Offset="0.0" />
-                <GradientStop Color="#a0d8f1" Offset="1.0" />
+                <GradientStop Color="Blue" Offset="1.0" />
             </LinearGradientBrush>
         </Grid.Background>
 
@@ -20,10 +20,10 @@
                        FontSize="32" 
                        FontAttributes="Bold" 
                        HorizontalOptions="Center"
-                       TextColor="#007ACC" />
+                       TextColor="Black" />
 
                 <!-- Фото Эстонии -->
-                <Image Source="esti.png"
+                <Image Source="est.png"
                        HeightRequest="250"
                        Aspect="AspectFit"
                        SemanticProperties.Description="Eesti kaart linnadega"
