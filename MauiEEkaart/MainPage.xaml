@@ -5,12 +5,12 @@
 
     <!-- Градиентный фон -->
     <Grid>
-        <Grid.Background>
+        <!--<Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="#f0f0f0" Offset="0.0" />
                 <GradientStop Color="Blue" Offset="1.0" />
             </LinearGradientBrush>
-        </Grid.Background>
+        </Grid.Background>-->
 
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="25">
@@ -30,13 +30,13 @@
                        HorizontalOptions="Center" />
 
                 <!-- Раздел: Tallinn -->
-                <Frame BackgroundColor="white" Padding="15" CornerRadius="12" HasShadow="True">
+                <Frame BackgroundColor="DarkBlue" Padding="15" CornerRadius="12" HasShadow="True">
                     <!-- Использование StackLayout внутри Frame для управления отступами -->
                     <StackLayout Spacing="10">
-                        <Label Text="Tallinn" FontSize="24" FontAttributes="Bold" TextColor="#333" HorizontalOptions="Center" />
-                        <Image Source="tln.jpg" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center" />
-                        <Label Text="Eesti pealinn, poliitiline ja kultuuriline keskus. Nimi 'Tallinn' tuleb sõnast 'Taani Linn'(Taani linn).\nTallinn on Eesti pealinn."
-                               TextColor="#555"
+                        <Label Text="Tallinn" FontSize="32" FontAttributes="Bold" TextColor="WhiteSmoke" HorizontalOptions="Center" />
+                        <Image Source="tln.jpg" HeightRequest="500" Aspect="AspectFit" HorizontalOptions="Center" />
+                        <Label Text="Eesti pealinn, poliitiline ja kultuuriline keskus. Nimi 'Tallinn' tuleb sõnast 'Taani Linn'(Taani linn).Tallinn on Eesti pealinn."
+                               TextColor="White" FontAttributes="Bold"
                                HorizontalOptions="Center" />
                     </StackLayout>
                 </Frame>
