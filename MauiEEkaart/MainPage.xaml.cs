@@ -6,7 +6,13 @@ namespace MauiEEkaart
     {
         public MainPage()
         {
-            InitializeComponent(); // Цей виклик обов'язковий!
+            InitializeComponent(); // Этот вызов обязателен!
+        }
+
+        private async void OnTallinnButtonClicked(object sender, EventArgs e)
+        {
+            // Переход на страницу TallinnPage
+            await Navigation.PushAsync(new TallinnPage());
         }
     }
 }

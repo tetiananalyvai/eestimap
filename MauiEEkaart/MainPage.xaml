@@ -47,6 +47,11 @@
                         <Label Text="Eesti pealinn, poliitiline ja kultuuriline keskus. Nimi 'Tallinn' tuleb sõnast 'Taani Linn'(Taani linn).Tallinn on Eesti pealinn."
                                TextColor="White" FontAttributes="Bold"
                                HorizontalOptions="Center" />
+                        <Button Text="Loe edasi" 
+                                FontAttributes="Bold" 
+                                BackgroundColor="White" 
+                                TextColor="DarkBlue"
+                                Clicked="OnTallinnButtonClicked" /> 
                     </StackLayout>
                 </Frame>
 
