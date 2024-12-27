@@ -3,41 +3,94 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiEEkaart.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="25">
+    <!-- Градиентный фон -->
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <!-- Черная полоса -->
+                <GradientStop Color="Black" Offset="0.0" />
+                <GradientStop Color="Black" Offset="0.3333" />
 
-            <!-- Заголовок -->
-            <Label Text="Краса Естонії: Міста та їх опис" 
-               FontSize="24" 
-               FontAttributes="Bold" 
-               HorizontalOptions="Center" />
+                <!-- Синяя полоса -->
+                <GradientStop Color="Blue" Offset="0.3333" />
+                <GradientStop Color="Blue" Offset="0.6666" />
 
-            <!-- Зображення карти Естонії -->
-            <Image Source="esti.png"
-               HeightRequest="250"
-               Aspect="AspectFit"
-               SemanticProperties.Description="Карта Естонії з містами" />
+                <!-- Белая полоса -->
+                <GradientStop Color="White" Offset="0.6666" />
+                <GradientStop Color="White" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
 
-            <!-- Таллінн -->
-            <Label Text="Таллінн" FontSize="20" FontAttributes="Bold" />
-            <Image Source="licensed-image.jpg" HeightRequest="200" Aspect="AspectFit" />
-            <Label Text="• Столиця Естонії, політичний та культурний центр.\n• Назва 'Tallinn' походить від слів 'Taani Linn' (Данське місто)." />
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="25">
 
-            <!-- Тарту -->
-            <Label Text="Тарту" FontSize="20" FontAttributes="Bold" />
-            <Image Source="vanalinn(9).jpg" HeightRequest="200" Aspect="AspectFit" />
-            <Label Text="• Друге за величиною місто.\n• Місто відоме давньою історією та культурою." />
+                <!-- Заголовок -->
+                <Label Text="Eestimaa ilu: Linnad ja nende kirjeldused" 
+                       FontSize="32" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center"
+                       TextColor="Wheat" />
 
-            <!-- Пярну -->
-            <Label Text="Пярну" FontSize="20" FontAttributes="Bold" />
-            <Image Source="licensed-image (2).jpg" HeightRequest="200" Aspect="AspectFit" />
-            <Label Text="• Головний курорт Естонії на узбережжі Балтійського моря." />
+                <!-- Gerb -->
+                <Image Source="est2.png"
+                       HeightRequest="250"
+                       Aspect="AspectFit"
+                       SemanticProperties.Description="Eesti kaart linnadega"
+                       HorizontalOptions="Center" />
 
-            <!-- Нарва -->
-            <Label Text="Нарва" FontSize="20" FontAttributes="Bold" />
-            <Image Source="licensed-image (1).jpg" HeightRequest="200" Aspect="AspectFit" />
-            <Label Text="• Місто з багатою історією, розташоване на кордоні з Росією." />
+                <!-- Раздел: Tallinn -->
+                <Frame BackgroundColor="DarkBlue" Padding="15" CornerRadius="12" HasShadow="True">
+                    <!-- Использование StackLayout внутри Frame для управления отступами -->
+                    <StackLayout Spacing="10">
+                        <Label Text="Tallinn" FontSize="32" FontAttributes="Bold" TextColor="WhiteSmoke" HorizontalOptions="Center" />
+                        <Image Source="tln.jpg" HeightRequest="500" Aspect="AspectFit" HorizontalOptions="Center" />
+                        <Label Text="Eesti pealinn, poliitiline ja kultuuriline keskus. Nimi 'Tallinn' tuleb sõnast 'Taani Linn'(Taani linn).Tallinn on Eesti pealinn."
+                               TextColor="White" FontAttributes="Bold"
+                               HorizontalOptions="Center" />
+                        <Button Text="Loe edasi" 
+                                FontAttributes="Bold" 
+                                BackgroundColor="White" 
+                                TextColor="DarkBlue"
+                                Clicked="OnTallinnButtonClicked" /> 
+                    </StackLayout>
+                </Frame>
 
-        </VerticalStackLayout>
-    </ScrollView>
+                <!-- Раздел: Tartu -->
+                <Frame BackgroundColor="DarkBlue" Padding="15" CornerRadius="12" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="Тartu" FontSize="24" FontAttributes="Bold" TextColor="WhiteSmoke" HorizontalOptions="Center" />
+                        <Image Source="tartu.jpg" HeightRequest="500" Aspect="AspectFit" HorizontalOptions="Center" />
+                        <Label Text="Suuruselt teine ​​linn. Linn on kuulus oma iidse ajaloo ja kultuuri poolest."
+                               TextColor="White"
+                               HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Раздел: Parnu -->
+                <Frame BackgroundColor="DarkBlue" Padding="15" CornerRadius="12" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="Parnu" FontSize="24" FontAttributes="Bold" TextColor="WhiteSmoke" HorizontalOptions="Center" />
+                        <Image Source="parnu.jpg" HeightRequest="500" Aspect="AspectFit" HorizontalOptions="Center" />
+                        <Label Text="Eesti peamine kuurort Läänemere rannikul."
+                               TextColor="White"
+                               HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Раздел: Narva -->
+                <Frame BackgroundColor="DarkBlue" Padding="15" CornerRadius="12" HasShadow="True">
+                    <StackLayout Spacing="10">
+                        <Label Text="Narva" FontSize="24" FontAttributes="Bold" TextColor="WhiteSmoke" HorizontalOptions="Center" />
+                        <Image Source="narva.jpg" HeightRequest="500" Aspect="AspectFit" HorizontalOptions="Center" />
+                        <Label Text="Rikka ajalooga linn, mis asub Venemaa piiril."
+                               TextColor="White"
+                               HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
+    
+<!--dalshe dodelaite!-->
