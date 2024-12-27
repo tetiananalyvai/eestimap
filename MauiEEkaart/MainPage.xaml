@@ -49,7 +49,7 @@
                                HorizontalOptions="Center" />
                         <Button Text="Loe edasi" 
                                 FontAttributes="Bold" 
-                                BackgroundColor="White" 
+                                BackgroundColor="Gold" 
                                 TextColor="DarkBlue"
                                 Clicked="OnTallinnButtonClicked" /> 
                     </StackLayout>
@@ -63,6 +63,11 @@
                         <Label Text="Suuruselt teine ​​linn. Linn on kuulus oma iidse ajaloo ja kultuuri poolest."
                                TextColor="White"
                                HorizontalOptions="Center" />
+                        <Button Text="Loe edasi" 
+                                FontAttributes="Bold" 
+                                BackgroundColor="Gold" 
+                                TextColor="DarkBlue"
+                                Clicked="OnTartuButtonClicked" />
                     </StackLayout>
                 </Frame>
 
@@ -74,6 +79,11 @@
                         <Label Text="Eesti peamine kuurort Läänemere rannikul."
                                TextColor="White"
                                HorizontalOptions="Center" />
+                        <Button Text="Loe edasi" 
+                                FontAttributes="Bold" 
+                                BackgroundColor="Gold" 
+                                TextColor="DarkBlue"
+                                Clicked="OnParnuButtonClicked" />
                     </StackLayout>
                 </Frame>
 
@@ -85,6 +95,11 @@
                         <Label Text="Rikka ajalooga linn, mis asub Venemaa piiril."
                                TextColor="White"
                                HorizontalOptions="Center" />
+                        <Button Text="Loe edasi" 
+                                FontAttributes="Bold" 
+                                BackgroundColor="Gold" 
+                                TextColor="DarkBlue"
+                                Clicked="OnNarvaButtonClicked" />
                     </StackLayout>
                 </Frame>
 
@@ -92,5 +107,3 @@
         </ScrollView>
     </Grid>
 </ContentPage>
-    
-<!--dalshe dodelaite!-->

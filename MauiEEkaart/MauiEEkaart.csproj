@@ -63,6 +63,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="ParnuPage.xaml.cs">
+	    <DependentUpon>ParnuPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="TartuPage.xaml.cs">
+	    <DependentUpon>TartuPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="NarvaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ParnuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TartuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="TallinnPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiEEkaart.TallinnPage">
+             x:Class="MauiEEkaart.ParnuPage">
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="15">
                 <!-- Заголовок -->
-                <Label Text="Tallinn" 
+                <Label Text="Parnu" 
                        FontSize="32" 
                        FontAttributes="Bold" 
                        HorizontalOptions="Center" 
                        TextColor="DarkBlue" />
                 <!-- Картинка -->
-                <Image Source="tln.jpg"
+                <Image Source="parnu.jpg"
                        HeightRequest="250"
                        Aspect="AspectFit"
                        HorizontalOptions="Center" />
                 <!-- Описание -->
-                <Label Text="Eesti pealinn,poliitiline ja kultuuriline keskus. Nimi 'Tallinn' tuleb sõnast 'Taani Linn' (Taani linn)."
+                <Label Text="Pärnu on kuurortlinn Eestis Läänemere rannikul. Oleme tuntud oma randade, spaade ja suvise atmosfääri poolest."
                        FontSize="18"
                        TextColor="Black" 
                        HorizontalOptions="Center" />
